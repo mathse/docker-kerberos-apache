@@ -17,7 +17,7 @@ sudo net ads keytab ADD HTTP
 sudo unset KRB5_KTNAME
 ```
 
-### copy rkb5.conf
+### copy krb5.conf
 ```
 cp /etc/krb5.conf ./conf
 ```
