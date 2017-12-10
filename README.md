@@ -6,15 +6,15 @@ create a SPN for your container on your host - I assume that your host is alread
 
 ### get ticket
 ```
-kinit <domain-admin>
+sudo kinit <domain-admin>
 ```
 
 ### redirect kerberos keytab-file and create SPN
 ```
-export KRB5_KTNAME=FILE:./conf/HTTP.keytab
-net ads keytab CREATE
-net ads keytab ADD HTTP
-unset KRB5_KTNAME
+sudo export KRB5_KTNAME=FILE:./conf/HTTP.keytab
+sudo net ads keytab CREATE
+sudo net ads keytab ADD HTTP
+sudo unset KRB5_KTNAME
 ```
 
 ### copy rkb5.conf
